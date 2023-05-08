@@ -16,7 +16,7 @@
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Agendar uma Conversa</title>
+    <title>Parceria WORC + Frubana</title>
 
 
   </head>
@@ -31,143 +31,20 @@
           <div class="form h-100 contact-wrap p-5">
             <div class="text-center">
               <img src="worc_frubana.png" style="width: 60%; margin-bottom: 50px; margin-top: -10px;">
-              <h3>Quer contratar sua equipe com a Worc, aproveite a parceria com a Frubana?</h3>
-            <p style="margin-bottom: 50px;">Insira seus dados abaixo que nossa equipe comercial entrará em contato com o seu estabelecimento em até 24h! 😁</p>
+              <h3>Parceria WORC + Frubana?</h3>
+            <p style="margin-bottom: 50px;">Selecione uma opção para prosseguir:</p>
             </div>
             
-            <form class="mb-5 box" method="post" id="contactForm" name="contactForm">
-              <div class="row">
+            <div style="text-align: center; border: 1px grey solid; padding: 15px; margin-bottom: 20px;">
+              <h4>Lead quer avançar</h4>
+              <p>Lead se interessou pela WORC e quer agendar um papo com o especialista para saber mais</p>
+              <a href="avancou_parceria.html" target="_blank" style="background-color: #3498DB; padding: 10px; color: white; border-radius: 5px;">Clique aqui</a>
+            </div>
 
-                <input id="date" name="prop_date" style="display:none">
-
-
-                <div class="col-md-12 form-group mb-3">
-                  <label for="" class="col-form-label">Nome do seu Estabelecimento*</label>
-                  <input type="text" class="form-control" onkeyup="success()" name="nome_estabelecimento" id="nome_estabelecimento">
-                </div>
-
-                <div class="col-md-4 form-group mb-3">
-                  <label for="" class="col-form-label">Tipo de Estabelecimento*</label>
-                  <select name="tipo_de_estabelecimento" class="form-control" id="cars">
-                      <option value=""></option>
-                      <option value="Açougue">Açougue</option>
-                      <option value="Agência de R&S">Agência de R&S</option>
-                      <option value="Bar">Bar</option>
-                      <option value="Cafeteria/ Brunch">Cafeteria/ Brunch</option>
-                      <option value="Churrascaria">Churrascaria</option>
-                      <option value="Culinária Alemã">Culinária Alemã</option>
-                      <option value="Culinária Árabe">Culinária Árabe</option>
-                      <option value="Culinária Brasileira">Culinária Brasileira</option>
-                      <option value="Culinária Italiana">Culinária Italiana</option>
-                      <option value="Culinária Mexicana">Culinária Mexicana</option>
-                      <option value="Culinária Peruana">Culinária Peruana</option>
-                      <option value="Culinária Francesa">Culinária Francesa</option>
-                      <option value="Culinária Japonesa">Culinária Japonesa</option>
-                      <option value="Culinária Asíatica">Culinária Asiática</option>
-                      <option value="Culinária Mediterrânea">Culinária Mediterrânea</option>
-                      <option value="Fast food (Hotdog, pastelaria...)">Fast food (Hotdog, pastelaria...)</option>
-                      <option value="Padaria">Padaria</option>
-                      <option value="Balada">Balada</option>
-                      <option value="Evento">Evento</option>
-                      <option value="Hotelaria">Hotelaria</option>
-                      <option value="Hamburgueria">Hamburgueria</option>
-                      <option value="Pizzaria">Pizzaria</option>
-                      <option value="Marmita">Marmita</option>
-                      <option value="Mercado">Mercado</option>
-                      <option value="Saudável">Saudável</option>
-                      <option value="Veggie">Veggie</option>
-                      <option value="Doces">Doces</option>
-                  </select>                
-                </div>
-
-                 <div class="col-md-4 form-group mb-3">
-                  <label for="" class="col-form-label">Quantidade de Casas*</label>
-                  <input type="text" class="form-control" onkeyup="success()" name="qtde_casas" id="qtde_casas">
-                </div>
-
-                <div class="col-md-4 form-group mb-3">
-                  <label for="" class="col-form-label">Quantidade de Funcionários*</label>
-                  <select name="qtde_funcionarios" class="form-control" id="cars">
-                      <option value=""></option>
-                      <option value="0-10">0-10</option>
-                      <option value="11-50">11-50</option>
-                      <option value="51-200">51-200</option>
-                      <option value="201-501">201-501</option>
-                      <option value="501-1000">501-1000</option>
-                      <option value="1001-5000">1001-5000</option>
-                      <option value="5001-10000">5001-10000</option>
-                      <option value="+10000">+10000</option>
-                    </select>
-                </div>
-
-                <div class="col-md-12 form-group mb-3">
-                  <label for="" class="col-form-label">Vagas em aberto?*</label>
-                  <select name="vagas_abertas" class="form-control" id="cars">
-                      <option value=""></option>
-                      <option value="Sim">Sim</option>
-                      <option value="Não">Não</option>
-                      <option value="N/I">N/I</option>
-                  </select>                
-                </div>
-   
-
-                <div class="col-md-6 form-group mb-3">
-                  <label for="" class="col-form-label">Nome Responsável*</label>
-                  <input type="text" class="form-control" onkeyup="success()" name="data_hora_reuniao">
-                </div>
-
-
-                <div class="col-md-6 form-group mb-3">
-                  <label for="" class="col-form-label">Data/ Hora da Reunião</label>
-                  <input type="datetime-local" class="form-control" onkeyup="success()" name="nome_responsavel" id="nome_responsavel">
-                </div>
-
-                <div class="col-md-6 form-group mb-3">
-                  <label for="" class="col-form-label">Email*</label>
-                  <input type="email" class="form-control" onkeyup="success()" name="email" id="email">
-                </div>
-
-
-                <div class="col-md-6 form-group mb-3">
-                  <label for="" class="col-form-label">Whatsapp / Telefone*</label>
-                  <input type="text" class="form-control" onkeyup="success()" name="telefone" id="telefone">
-                </div>
-                <div class="col-md-12 form-group mb-3">
-                  <label for="" class="col-form-label">Cidade*</label>
-                  <input type="text" class="form-control" onkeyup="success()" name="cidade" id="cidade">
-                </div>
-
-                <div class="col-md-12 form-group mb-3">
-                  <label for="" class="col-form-label">Como conheceu a gente?*</label>
-                  <select name="como_conheceu_a_gente" class="form-control" id="cars">
-                      <option value=""></option>
-                      <option value="Indicação">Indicação</option>
-                      <option value="LinkedIn">LinkedIn</option>
-                      <option value="Pesquisa Google">Pesquisa Google</option>
-                      <option value="Mídias Sociais">Mídias Sociais</option>
-                      <option value="Veículos de Notícias">Veículos de Notícias</option>
-                  </select>                
-                </div>
-
-                <div class="col-md-12 form-group mb-3">
-                  <label for="" class="col-form-label">Mensagem*</label>
-                  <textarea rows="4" class="form-control" name="mensagem_ae"></textarea>
-                </div>
-
-              </div>
-
-              
-              <div class="row justify-content-center" style="margin-top: 40px">
-                <div class="col-md-5 form-group text-center">
-                  <button id="button" type="submit" class="btn btn-block btn-primary rounded-0 py-2 px-4" disabled onclick="showHtmlDiv();">Enviar</button>
-                  
-                </div>
-              </div>
-            </form>
-
-            <div class="text-center" id="output" style="display: none">
-              <img id="img1" src="check-circle.gif" style="margin-bottom: 20px">
-              <p>Sua mensagem foi enviada com sucesso e em breve nossa equipe comercial irá entrar em contato para agendar um bate papo!</p>
+            <div style="text-align: center; border: 1px grey solid; padding: 15px;">
+              <h4>Lead não tem interesse</h4>
+              <p>Lead não tem interesse em prosseguir com o papo com o especialista da WORC</p>
+              <a href="nao_avancou_parceria.html" target="_blank" style="background-color: #3498DB; padding: 10px; color: white; border-radius: 5px;">Clique aqui</a>
             </div>
 
           </div>
